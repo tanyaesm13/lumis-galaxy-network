@@ -121,6 +121,17 @@
   .next{display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:20px auto 26px; max-width:720px}
   .next span{background:rgba(13,15,40,.45); border:1px solid rgba(238,240,255,.14); border-radius:10px; padding:9px 14px; font-size:.93rem}
 
+  /* ---------- sneak peek ---------- */
+  .peek-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+  .peek-item{
+    background:linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.02));
+    border:1px solid rgba(114,237,250,.16); border-radius:18px; overflow:hidden;
+  }
+  .peek-item img{display:block; width:100%; height:auto}
+  .peek-item figcaption{padding:14px 18px 16px; color:var(--ink-dim); font-size:.95rem}
+  .peek-item figcaption b{color:var(--ink); display:block; margin-bottom:2px}
+  @media (max-width:820px){ .peek-grid{grid-template-columns:1fr} }
+
   /* ---------- security ---------- */
   .security{text-align:center}
   .security .shield{font-size:2.2rem}
@@ -271,6 +282,45 @@
       strong sign-in, and assistants who <b>ask permission before they act</b>.
       Nothing social launches ahead of the security layer — because your Galaxy should be
       as safe as it is beautiful.</p>
+  </section>
+
+  <section id="peek">
+    <h2>SNEAK PEEK — INSIDE THE GALAXY™</h2>
+    <p class="sub">A first look at the rooms we're building — private by design, gone in 72 hours, yours.</p>
+    <div class="peek-grid">
+      <figure class="peek-item">
+        <img src="peek/peek-1-gate.jpg" alt="Inside the Galaxy — The Gate: Lumi asks your permission before anything happens. Sol wants to peek at Maria's free/busy for Saturday lunch — Allow once, or not now." loading="lazy" width="1100" height="619">
+        <figcaption><b>The Gate</b>Nothing happens behind your back — Lumi asks first, every single time.</figcaption>
+      </figure>
+      <figure class="peek-item">
+        <img src="peek/peek-2-team.jpg" alt="Inside the Galaxy — Your team: your assistants as cards, each wearing a key badge for its own job — Sol calendar, Stella social, Vega study, Cielo weather." loading="lazy" width="1100" height="619">
+        <figcaption><b>Your team inside the Galaxy</b>Your whole team, each one holding only the key for its own job.</figcaption>
+      </figure>
+      <figure class="peek-item">
+        <img src="peek/peek-3-strangers-view.jpg" alt="Inside the Galaxy — A stranger's view: someone not connected to you sees only a small public card, with locks reading team private, Galaxy list private, contact by invitation only." loading="lazy" width="1100" height="619">
+        <figcaption><b>A stranger's view</b>People who aren't connected to you see a name, a smile — and nothing else.</figcaption>
+      </figure>
+      <figure class="peek-item">
+        <img src="peek/peek-4-rate-your-galaxy.jpg" alt="Inside the Galaxy — Rate Your Galaxy: your favorite people placed as avatars onto the 26 stars of the constellation L on your profile." loading="lazy" width="1100" height="619">
+        <figcaption><b>Rate Your Galaxy</b>Your favorite people, written onto the 26 stars of your constellation L.</figcaption>
+      </figure>
+      <figure class="peek-item">
+        <img src="peek/peek-5-status-composer.jpg" alt="Inside the Galaxy — Status composer: a text-only status with its 72-hour poof timer ring counting down from 72:00." loading="lazy" width="1100" height="619">
+        <figcaption><b>Status composer</b>Say it to your Galaxy — then it poofs away on its own in 72 hours.</figcaption>
+      </figure>
+      <figure class="peek-item">
+        <img src="peek/peek-6-parents-view.jpg" alt="Inside the Galaxy — Parent's view: a calm dashboard showing who is in Sofia's Galaxy — six people — with parent view and new-connection approval switched on, and a revoke button." loading="lazy" width="1100" height="619">
+        <figcaption><b>Parent's view</b>A calm window into your teen's Galaxy — who is in it, and the power to act.</figcaption>
+      </figure>
+      <figure class="peek-item">
+        <img src="peek/peek-7-meeting-room.jpg" alt="Inside the Galaxy — Meeting room: an invitation-only team meeting with four members appearing as their avatars at the table, never camera faces." loading="lazy" width="1100" height="619">
+        <figcaption><b>Meeting room</b>Your teams, face to face — avatars at the table, never camera faces.</figcaption>
+      </figure>
+      <figure class="peek-item">
+        <img src="peek/peek-8-scam-center.jpg" alt="Inside the Galaxy — Scam Protection Center: Help and Support in plain language — report a scam, block and report, and the promise that Lumi Galaxy will never ask for your password." loading="lazy" width="1100" height="619">
+        <figcaption><b>Scam Protection Center</b>Help in plain language — and a promise: we will never ask for your password.</figcaption>
+      </figure>
+    </div>
   </section>
 
 </main>
